@@ -1,0 +1,137 @@
+.container-nav-bar {
+  width: 100vw;
+  height: 70px;
+  background: rgb(218, 73, 0);
+  background: linear-gradient(
+    260deg,
+    rgba(218, 73, 0, 1) 0%,
+    rgba(197, 0, 0, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-son-1 {
+  min-width: 1000px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-img-burguer {
+  width: 35px;
+  height: 30px;
+}
+
+#img-burguer {
+  width: 100%;
+  height: auto;
+}
+
+.container-logo-name-cookchef {
+  width: 300px;
+  height: 50px;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: 70px;
+}
+
+.container-logo-name-cookchef h1 {
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+}
+
+.container-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.container-logo img {
+  width: 100%;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.search-bar {
+  width: 500px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  margin-left: 100px;
+}
+
+.search-bar:focus-within {
+  border: solid 1px #aaa;
+  box-shadow: 0px 2px 5px rgb(35,35,36,0.2);
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: auto;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.search-bar .actions {
+  display: flex;
+  gap: 5px;
+}
+
+.search-bar .actions button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: #999;
+}
+
+.search-bar .actions button:hover {
+  color: #2979e2;
+}
+
+
+.container-son-2 {
+  width: 50px;
+  height: 50px;
+}
+
+.container-son-2 img {
+  width: 100%;
+  height: auto;
+}
+
+
