@@ -1,0 +1,34 @@
+<div class="container-main">
+  <header>
+    <nav-bar-component></nav-bar-component>
+  </header>
+  <div class="container-son">
+    <div class="container-title">
+      <div class="container-img-cook">
+        <img src="assets/img/Presentation.png" alt="" />
+      </div>
+      <div class="container-expressions">
+        <p>
+          ¡Comparte tu pasión por la cocina en CookChef! Si tienes una receta
+          única y deliciosa, no pierdas la oportunidad de inspirar a otros
+          amantes de la gastronomía.
+        </p>
+        <p>
+          <span id="text-persuasive"
+            >¡Muestra tu creatividad y deja que tus sabores conquisten a la
+            comunidad!</span
+          >
+        </p>
+      </div>
+    </div>
+    <form action="">
+      <div class="b-info-main">
+        <app-information-main
+          *ngFor="let input of inputs"
+          [titleAction]="input.referenceAction"
+          [placeholder]="input.content"
+        ></app-information-main>
+      </div>
+    </form>
+  </div>
+</div>

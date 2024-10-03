@@ -1,6 +1,7 @@
 .container-nav-bar {
-  width: 100vw;
+  max-width: 100vw;
   height: 70px;
+  box-sizing: border-box;
   background: rgb(218, 73, 0);
   background: linear-gradient(
     260deg,
@@ -15,7 +16,7 @@
 }
 
 .container-son-1 {
-  min-width: 1000px;
+  width: 1000px;
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -29,7 +30,6 @@
 
 #img-burguer {
   width: 100%;
-  height: auto;
 }
 
 .container-logo-name-cookchef {

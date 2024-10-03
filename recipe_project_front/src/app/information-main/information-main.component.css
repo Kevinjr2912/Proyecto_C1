@@ -1,0 +1,25 @@
+.box-recipe {
+  font-family: cursive;
+  width: 750px;
+  margin-left: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+textarea {
+  width: 745px;
+  height: 45px;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: cursive;
+  font-size: 15px;
+  resize:none;
+  text-align: justify;
+  outline: none;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid rgba(150, 150, 150, 1);
+}
