@@ -18,6 +18,11 @@ export class AddRecipePageComponent {
       content: 'Información relevante de la receta'
     }
   ]
+
+  process: string[] = [
+    'Ingredientes',
+    'Instrucciones'
+  ]
 }
 
 

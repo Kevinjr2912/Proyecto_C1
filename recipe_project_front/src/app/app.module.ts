@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AddRecipePageComponent } from './add-recipe-page/add-recipe-page.component';
 import { InformationMainComponent } from './information-main/information-main.component';
+import { ProcessComponent } from './process/process.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { InformationMainComponent } from './information-main/information-main.co
     AppComponent,
     NavBarComponent,
     AddRecipePageComponent,
-    InformationMainComponent
+    InformationMainComponent,
+    ProcessComponent
   ],
   imports: [
     BrowserModule,

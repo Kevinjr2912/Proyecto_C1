@@ -63,6 +63,9 @@
           <input type="text" />
         </div>
       </div>
+      <div class="container-process">
+        <app-process *ngFor="let item of process" [titleProcess]="item"></app-process>
+      </div>
     </form>
   </div>
 </div>
