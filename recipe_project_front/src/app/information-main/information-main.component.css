@@ -1,5 +1,4 @@
 .box-recipe {
-  font-family: cursive;
   width: 750px;
   margin-left: 10px;
 }
@@ -13,7 +12,6 @@ textarea {
   height: 45px;
   margin-top: 10px;
   padding: 10px;
-  font-family: cursive;
   font-size: 15px;
   resize:none;
   text-align: justify;
