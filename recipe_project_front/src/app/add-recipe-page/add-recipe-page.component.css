@@ -1,15 +1,16 @@
 .container-son {
   font-family: cursive;
   width: 90vw;
+  min-height: 100vh;
   background: rgb(211, 211, 211);
   background: linear-gradient(
     260deg,
     rgba(211, 211, 211, 1) 0%,
     rgba(216, 216, 216, 1) 100%
   );
-  height: 100vh;
   margin-left: 5%;
   margin-top: 70px;
+  margin-bottom: 100px;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 2px 1px 7px #9d9d9d;
@@ -113,4 +114,45 @@
 
 .container-process {
   display: flex;
+}
+
+.box-reload-img {
+  margin: 100px auto;
+  width: 50%;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border: 2px dashed black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-reload-img input:hover {
+  cursor: pointer;
+}
+
+.box-reload-img input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.box-references {
+  margin-left: 320px;
+  margin-top: 90px;
+}
+
+button {
+  font-family: cursive;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #969696;
+  border-radius: 30px;
+  background-color: #B9B9B9;
+  margin: 50px auto;
 }
