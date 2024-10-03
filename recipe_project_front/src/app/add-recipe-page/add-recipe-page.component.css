@@ -1,5 +1,5 @@
 .container-son {
-  box-sizing: border-box;
+  font-family: cursive;
   width: 90vw;
   background: rgb(211, 211, 211);
   background: linear-gradient(
@@ -12,7 +12,7 @@
   margin-top: 70px;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 2px 1px 7px #9D9D9D;
+  box-shadow: 2px 1px 7px #9d9d9d;
 }
 
 .container-title {
@@ -61,4 +61,52 @@
   height: 100px;
   margin-top: 60px;
   display: flex;
+}
+
+.box-information-additional {
+  height: 70px;
+  margin-top: 20px;
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px dashed black;
+}
+
+.box-information-additional p {
+  font-size: 20px;
+}
+
+.box-information-additional input {
+  outline: none;
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #969696;
+  border-radius: 30px;
+}
+
+#option-dificult {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #969696;
+  border-radius: 30px;
+}
+
+.box-time,
+.box-difficult,
+.box-diners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 10px;
+}
+
+.box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
