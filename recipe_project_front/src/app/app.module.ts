@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -9,6 +9,7 @@ import { InformationMainComponent } from './information-main/information-main.co
 import { ProcessComponent } from './process/process.component';
 import { SeePublishedRecipesPageComponent } from './see-published-recipes-page/see-published-recipes-page.component';
 import { CardsRecipesPublishedComponent } from './cards-recipes-published/cards-recipes-published.component';
+import { ActionsPageComponent } from './actions-page/actions-page.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CardsRecipesPublishedComponent } from './cards-recipes-published/cards-
     InformationMainComponent,
     ProcessComponent,
     SeePublishedRecipesPageComponent,
-    CardsRecipesPublishedComponent
+    CardsRecipesPublishedComponent,
+    ActionsPageComponent
   ],
   imports: [
     BrowserModule,

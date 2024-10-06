@@ -1,0 +1,136 @@
+.box-son-information-recipe {
+  background-color: #f3f3f3;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.receta-container {
+  background-color: #fff;
+  width: 75%;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 20px;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.receta-container h1{
+  margin-top: 30px;
+}
+
+.nombre-comida {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.info-receta {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.imagen-comida {
+  width: 250px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.acerca-de {
+  width: 900px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.acerca-de h2 {
+  margin-bottom: 15px;
+}
+
+.detalles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.detalles input {
+  outline: none;
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #969696;
+  border-radius: 30px;
+}
+
+.box-time,
+.box-difficult,
+.box-diners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 10px;
+}
+
+.box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#option-dificult {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #969696;
+  border-radius: 30px;
+}
+
+
+.seccion {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.seccion h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.seccion p {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  min-height: 80px;
+}
+
+button {
+  position: relative;
+  left: 530px;
+  top: 60px;
+  width: 150px;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: 1px solid #969696;
+  background-color: #f9f9f9;
+}
+
+button:hover {
+  background-color: #e1e1e1;
+}
