@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -10,6 +10,7 @@ import { ProcessComponent } from './process/process.component';
 import { SeePublishedRecipesPageComponent } from './see-published-recipes-page/see-published-recipes-page.component';
 import { CardsRecipesPublishedComponent } from './cards-recipes-published/cards-recipes-published.component';
 import { ActionsPageComponent } from './actions-page/actions-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,11 +22,13 @@ import { ActionsPageComponent } from './actions-page/actions-page.component';
     ProcessComponent,
     SeePublishedRecipesPageComponent,
     CardsRecipesPublishedComponent,
-    ActionsPageComponent
+    ActionsPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,76 +1,79 @@
-.box-son-information-recipe {
-  background-color: #f3f3f3;
-  max-width: 100vw;
+.container-son {
+  width: 90vw;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.receta-container {
-  background-color: #fff;
-  width: 75%;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 20px;
-  padding-bottom: 100px;
-  margin-top: 100px;
+  background: rgb(211, 211, 211);
+  background: linear-gradient(
+    260deg,
+    rgba(211, 211, 211, 1) 0%,
+    rgba(216, 216, 216, 1) 100%
+  );
+  margin-left: 5%;
+  margin-top: 70px;
   margin-bottom: 100px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 2px 1px 7px #9d9d9d;
 }
 
-.receta-container h1{
-  margin-top: 30px;
-}
-
-.nombre-comida {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.info-receta {
-  margin-top: 40px;
+.b-info-main {
+  width: 100%;
+  height: 100px;
+  margin-top: 60px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
-.imagen-comida {
-  width: 250px;
-  height: 150px;
-  background-color: #ddd;
-  border-radius: 10px;
+.box-recipe {
+  width: 750px;
+  margin-left: 10px;
 }
 
-.acerca-de {
-  width: 900px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+label {
+  font-size: 22px;
+}
+
+textarea {
+  width: 745px;
+  height: 45px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  resize:none;
   text-align: justify;
+  outline: none;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid rgba(150, 150, 150, 1);
 }
 
-.acerca-de h2 {
-  margin-bottom: 15px;
-}
-
-.detalles {
+.box-information-additional {
+  height: 70px;
+  margin-top: 20px;
+  padding-bottom: 120px;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  font-size: 14px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px dashed black;
 }
 
-.detalles input {
+.box-information-additional p {
+  font-size: 20px;
+}
+
+.box-information-additional input {
   outline: none;
   width: 80px;
   padding: 5px;
   text-align: center;
+  border: 1px solid #969696;
+  border-radius: 30px;
+}
+
+#option-dificult {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  outline: none;
   border: 1px solid #969696;
   border-radius: 30px;
 }
@@ -91,46 +94,71 @@
   align-items: center;
 }
 
-#option-dificult {
-  width: 100px;
-  padding: 5px;
-  text-align: center;
-  outline: none;
-  border: 1px solid #969696;
+.container-process {
+  display: flex;
+}
+
+.box-ingredients, .box-process {
+  width: 740px;
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 15px;
   border-radius: 30px;
+  border: 1px solid #9d9d9d;
+  background: rgb(200, 200, 200);
+  background: linear-gradient(
+    260deg,
+    rgba(200, 200, 200, 1) 0%,
+    rgba(204, 204, 204, 1) 100%
+  );
 }
 
-
-.seccion {
-  margin-top: 80px;
-  margin-bottom: 20px;
-}
-
-.seccion h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.seccion p {
+.box-ingredients input, .box-process input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
   padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  min-height: 80px;
+  font-size: 15px;
+  resize: none;
+  text-align: justify;
+  outline: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid rgba(150, 150, 150, 1);
+}
+
+.box-reload-img {
+  margin: 100px auto;
+  width: 30%;
+  height: 300px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-reload-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 button {
-  position: relative;
-  left: 530px;
-  top: 60px;
-  width: 150px;
-  padding: 15px;
   font-size: 15px;
-  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #969696;
-  background-color: #f9f9f9;
+  border-radius: 30px;
+  background-color: #B9B9B9;
+  margin: 50px auto;
 }
 
 button:hover {
-  background-color: #e1e1e1;
+  cursor: pointer;
+  background-color: #dddddd;
 }
