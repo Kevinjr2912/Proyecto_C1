@@ -7,7 +7,7 @@ import { ActionsPageComponent } from './actions-page/actions-page.component';
 const routes: Routes = [
   {path: '', component: AddRecipePageComponent},
   {path: 'seePublisheRecipes', component: SeePublishedRecipesPageComponent},
-  {path: 'seeInformationRecipe', component: ActionsPageComponent}
+  {path: 'seeInformationRecipe/:id', component: ActionsPageComponent}
 ];
 
 @NgModule({

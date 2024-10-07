@@ -62,6 +62,30 @@
   display: flex;
 }
 
+.box-recipe {
+  width: 750px;
+  margin-left: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+textarea {
+  width: 745px;
+  height: 45px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  resize:none;
+  text-align: justify;
+  outline: none;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid rgba(150, 150, 150, 1);
+}
+
 .box-information-additional {
   height: 70px;
   margin-top: 20px;
@@ -114,6 +138,38 @@
   display: flex;
 }
 
+.box-father {
+  width: 740px;
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 15px;
+  border-radius: 30px;
+  border: 1px solid #9d9d9d;
+  background: rgb(200, 200, 200);
+  background: linear-gradient(
+    260deg,
+    rgba(200, 200, 200, 1) 0%,
+    rgba(204, 204, 204, 1) 100%
+  );
+}
+
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  resize: none;
+  text-align: justify;
+  outline: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid rgba(150, 150, 150, 1);
+}
+
+
 .box-reload-img {
   margin: 100px auto;
   width: 50%;
@@ -152,4 +208,9 @@ button {
   border-radius: 30px;
   background-color: #B9B9B9;
   margin: 50px auto;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: aliceblue;
 }

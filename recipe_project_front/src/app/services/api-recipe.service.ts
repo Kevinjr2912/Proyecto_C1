@@ -12,11 +12,23 @@ export class ApiRecipeService {
 
   constructor(private http: HttpClient) { }
 
-  public getinformationRecipe(): Observable<IInformationSpecificRecipe> {
-    return this.http.post<IInformationSpecificRecipe>(`${this.urlAPI}/getRecipe/1`, {}); 
+  public createRecipe(recipe: {}): Observable<void> {
+    return this.http.post<void>(`${this.urlAPI}/createRecipe`, recipe);
+  }
+
+  public getinformationRecipe(id: number): Observable<IInformationSpecificRecipe> {
+    return this.http.post<IInformationSpecificRecipe>(`${this.urlAPI}/getRecipe/${id}`, {}); 
+  }
+
+  public getRecipesPublished (): Observable<any> {
+    return this.http.post<any>(`${this.urlAPI}/getRecipesPublished/2)`, {});
   }
 
   public updateInformationRecipe(id: number, dataToUpdate: {}): Observable<any> {
     return this.http.put<any>(`${this.urlAPI}/updateRecipe/${id}`, dataToUpdate);
+  }
+
+  public deteleRecipe (id: number): Observable<void> {
+    return this.http.delete<void>(`${this.urlAPI}/deleteRecipe/${id}`,{});
   }
 }

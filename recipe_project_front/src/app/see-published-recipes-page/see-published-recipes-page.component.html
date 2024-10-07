@@ -150,12 +150,11 @@
       </div>
     </div>
     <div class="box-cards-recipes">
-      <app-cards-recipes-published></app-cards-recipes-published>
-      <app-cards-recipes-published></app-cards-recipes-published>
-      <app-cards-recipes-published></app-cards-recipes-published>
-      <app-cards-recipes-published></app-cards-recipes-published>
-      <app-cards-recipes-published></app-cards-recipes-published>
-      <app-cards-recipes-published></app-cards-recipes-published>
+      <app-cards-recipes-published
+        *ngFor="let item of recipes"
+        [titleRecipe]="item.name_recipe"
+        [idRecipe]="item.id_recipe"
+      ></app-cards-recipes-published>
     </div>
   </div>
 </div>

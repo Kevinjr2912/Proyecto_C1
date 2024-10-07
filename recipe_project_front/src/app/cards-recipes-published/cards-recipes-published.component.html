@@ -5,7 +5,7 @@
   <div class="box-son">
     <div class="box-about-recipe">
       <p class="cajita">
-        mdeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+        {{titleRecipe}}
       </p>
     </div>
     <div class="actions-recipe">
@@ -30,7 +30,7 @@
         <span>120</span>
       </div>
       <div class="box-update-delete">
-        <div class="box-icon-edit">
+        <div class="box-icon-edit" (click)="goToRecipeDetails()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-edit"
@@ -53,7 +53,7 @@
             <path d="M16 5l3 3" />
           </svg>
         </div>
-        <div class="box-icon-delete">
+        <div class="box-icon-delete" (click)="deleteRecipe()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-trash"

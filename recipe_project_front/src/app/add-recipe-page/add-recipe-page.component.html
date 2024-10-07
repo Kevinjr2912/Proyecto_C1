@@ -21,13 +21,16 @@
         </p>
       </div>
     </div>
-    <form action="">
+    <div>
       <div class="b-info-main">
-        <app-information-main
-          *ngFor="let input of inputs"
-          [titleAction]="input.referenceAction"
-          [placeholder]="input.content"
-        ></app-information-main>
+        <div class="box-recipe">
+          <label>Título de la receta: </label>
+          <textarea placeholder="Título por el cual otros usuarios van a conoces tu receta" [(ngModel)]="recipeToAdd.recipe.name_recipe"></textarea>
+        </div>
+        <div class="box-recipe">
+          <label>Acerca de la receta: </label>
+          <textarea placeholder="Información relevante de la receta" [(ngModel)]="recipeToAdd.recipe.description"></textarea>
+        </div>                
       </div>
       <div class="box-information-additional">
         <div class="box-time">
@@ -37,7 +40,7 @@
           <div>
             <p>Tiempo:</p>
           </div>
-          <input type="text" />
+          <input type="text" [(ngModel)]="timeInMinutes" (ngModelChange)="convertToSQLTime()"/>
           <p>min</p>
         </div>
         <div class="box-difficult">
@@ -47,7 +50,7 @@
           <div>
             <p>Dificultad:</p>
           </div>
-          <select name="" id="option-dificult">
+          <select id="option-dificult" [(ngModel)]="recipeToAdd.recipe.TypeDifficulty.name_type_difficulty">
             <option value="Fácil">Fácil</option>
             <option value="Intermedio">Intermedio</option>
             <option value="Difícil">Difícil</option>
@@ -60,14 +63,22 @@
           <div>
             <p>Porciones:</p>
           </div>
-          <input type="text" />
+          <input type="text" [(ngModel)]="recipeToAdd.recipe.number_portion"/>
         </div>
       </div>
       <div class="container-process">
-        <app-process
-          *ngFor="let item of process"
-          [titleProcess]="item"
-        ></app-process>
+        <div class="box-father">
+          <h3>Ingredientes</h3>
+          <div class="box-son-process">
+            <textarea class="textarea" [(ngModel)]="text_ingredient" (ngModelChange)="updateIngredients()"></textarea>
+          </div>
+        </div>
+        <div class="box-father">
+          <h3>Instrucciones</h3>
+          <div class="box-son-process">
+            <textarea [(ngModel)]="recipeToAdd.recipe.preparation"></textarea>
+          </div>
+        </div>
       </div>
       <div class="box-reload-img">
         <div class="box-references">
@@ -87,7 +98,7 @@
         <input type="file" class="file-input" />
       </div>
 
-      <button>
+      <button (click)="sendRecipe()">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-up" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <path d="M12 4l0 10" />
@@ -99,6 +110,6 @@
           Subir receta
         </p>
       </button>
-    </form>
+    </div>
   </div>
 </div>
