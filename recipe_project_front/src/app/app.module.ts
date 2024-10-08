@@ -11,6 +11,7 @@ import { SeePublishedRecipesPageComponent } from './see-published-recipes-page/s
 import { CardsRecipesPublishedComponent } from './cards-recipes-published/cards-recipes-published.component';
 import { ActionsPageComponent } from './actions-page/actions-page.component';
 import { FormsModule } from '@angular/forms';
+import { SeeInformationRecipeComponent } from './see-information-recipe/see-information-recipe.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     SeePublishedRecipesPageComponent,
     CardsRecipesPublishedComponent,
     ActionsPageComponent,
+    SeeInformationRecipeComponent,
   ],
   imports: [
     BrowserModule,

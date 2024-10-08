@@ -24,7 +24,7 @@ export class ApiRecipeService {
     return this.http.post<any>(`${this.urlAPI}/getRecipesPublished/2)`, {});
   }
 
-  public updateInformationRecipe(id: number, dataToUpdate: {}): Observable<any> {
+  public updateInformationRecipe(id: number | null, dataToUpdate: {}): Observable<any> {
     return this.http.put<any>(`${this.urlAPI}/updateRecipe/${id}`, dataToUpdate);
   }
 

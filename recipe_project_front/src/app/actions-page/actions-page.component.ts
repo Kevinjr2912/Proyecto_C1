@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./actions-page.component.css'],
 })
 export class ActionsPageComponent implements OnInit {
-  recipeId: number | null = null;  
+  recipeId: number | null = null;
   ingredientNames: string[] = [];
 
   recipe: IInformationSpecificRecipe = {
@@ -30,7 +30,7 @@ export class ActionsPageComponent implements OnInit {
   ngOnInit(): void {
     const idParam = this.route.snapshot.paramMap.get('id');
     if (idParam) {
-      this.recipeId = +idParam;  // El '+' convierte el string a número
+      this.recipeId = +idParam;
       this.getRecipeDetails(this.recipeId);
     }
   }
@@ -75,15 +75,7 @@ export class ActionsPageComponent implements OnInit {
       })),
     };
 
-    dataToUpdate.newDataIngredients.map((ingredient) => {
-      console.log(
-        ingredient.name_ingredient,
-        ingredient.previousName,
-        ingredient.nameEdited
-      );
-    });
-
-    this._apiRecipe.updateInformationRecipe(1, dataToUpdate).subscribe(
+    this._apiRecipe.updateInformationRecipe(this.recipeId, dataToUpdate).subscribe(
       (response) => {
         console.log('Receta actualizada:', response);
         Swal.fire({

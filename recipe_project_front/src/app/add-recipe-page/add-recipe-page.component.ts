@@ -39,12 +39,11 @@ export class AddRecipePageComponent {
       name_recipe: this.recipeToAdd.recipe.name_recipe,
       number_portion: this.recipeToAdd.recipe.number_portion,
       description: this.recipeToAdd.recipe.description,
-      preparation: this.recipeToAdd.recipe.description,
+      preparation: this.recipeToAdd.recipe.preparation,
       time_duration: this.recipeToAdd.recipe.time_duration,
       ingredients: this.recipeToAdd.recipe.Ingredients
     }    
 
-    console.log(recipe)
 
     this._api.createRecipe(recipe).subscribe(
       (response) => {

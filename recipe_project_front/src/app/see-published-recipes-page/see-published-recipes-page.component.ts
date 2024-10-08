@@ -6,6 +6,7 @@ import { ApiRecipeService } from '../services/api-recipe.service';
   templateUrl: './see-published-recipes-page.component.html',
   styleUrl: './see-published-recipes-page.component.css'
 })
+
 export class SeePublishedRecipesPageComponent implements OnInit {
   recipes: any[] = []
 

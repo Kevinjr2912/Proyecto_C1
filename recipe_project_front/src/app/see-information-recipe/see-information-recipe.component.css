@@ -1,0 +1,131 @@
+.box-submain-content-recipe {
+  width: 90vw;
+  min-height: 100vh;
+  background: rgb(211, 211, 211);
+  background: linear-gradient(
+    260deg,
+    rgba(211, 211, 211, 1) 0%,
+    rgba(216, 216, 216, 1) 100%
+  );
+  padding: 20px;
+  margin-left: 4.3%;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px #9d9d9d;
+}
+
+.box-information1-recipe,
+.box-information2-recipe {
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid rgb(197, 197, 197);
+  box-shadow: 1px 1px 4px #9d9d9d;
+}
+
+.box-main-part {
+  display: flex;
+  gap: 270px;
+}
+
+.box-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.box-user h3 {
+  text-shadow: 1px 0px 1px black;
+}
+
+.box-title h1 {
+  text-shadow: 0px 1px 1.5px black;
+}
+
+.box-main-secundary {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box-img {
+  width: 370px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-img img {
+  width: 100%;
+}
+
+.box-about-recipe {
+  width: 1070px;
+}
+
+.box-information-about {
+  word-wrap: break-word;
+}
+
+.box-information-about p {
+  font-size: 20px;
+}
+
+.box-information-additional {
+  height: 80px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  border-bottom: 2px dashed black;
+  border-top: 2px dashed black;
+}
+
+.box-information-additional p {
+  font-size: 20px;
+}
+
+#option-dificult {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #969696;
+  border-radius: 30px;
+}
+
+.box-time,
+.box-difficult,
+.box-diners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-information2-recipe {
+  margin-top: 50px;
+}
+
+.box-ingredients, .box-process {
+  padding: 20px;
+}
+
+.box-ingredients h2, .box-process h2 {
+  margin-bottom: 20px;
+}
+
+.box-ingredients ul li, .box-process ul li {
+  font-size: 20px;
+}

@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cards-recipes-published',
-  templateUrl: './cards-recipes-published.component.html',
+  templateUrl : './cards-recipes-published.component.html',
   styleUrl: './cards-recipes-published.component.css'
 })
 export class CardsRecipesPublishedComponent {
